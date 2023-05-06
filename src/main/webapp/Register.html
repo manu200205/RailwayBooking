@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Register User</title>
+<link rel="stylesheet" href="css/Register.css">
+</head>
+<body>
+<h1>Register User</h1>
+<table style='border:1px solid black'>
+<form action="register" method="post" required="required">
+<tr>
+<th>First Name:</th>
+<td><input type="text" name="first" required="required"></td>
+</tr>
+<tr>
+<th>Last Name:</th>
+<td><input type="text" name="last" required="required"></td>
+</tr>
+<tr>
+<th>Mobile:</th>
+<td><input type="tel" pattern="[0-9]{10}" name="mobile" required="required"></td>
+</tr>
+<tr>
+<th>Email:</th>
+<td><input type="email" name="email" required="required"></td>
+</tr>
+<tr>
+<th>Gender:</th>
+<td><input type="radio" name="gender" value="male" required="required">Male 
+<input type="radio" name="gender" value="female">Female</td>
+</tr>
+<tr>
+<th>Create Password:</th>
+<td><input type="password" name="password1" id="pass" required="required"></td>
+</tr>
+<tr>
+<th>Confirm Password:</th>
+<td><input type="password" name="password2" id="cpass" required="required"></td>
+</tr>
+<tr>
+<th>Date of Birth:</th>
+<td><input type="date" name="dob" required="required"></td>
+</tr>
+<tr> 
+<td><a><button type="reset">Cancel</button></a></td>
+<td><button>Register</button><td>
+</tr>
+</form>
+</table><br>
+<a href="Login.html">Already have an account? Click here to Login</a><br><br>
+<a href="Home.html"><button>Home</button></a>
+</body>
+</html>
