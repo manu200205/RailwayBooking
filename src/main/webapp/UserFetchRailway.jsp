@@ -8,9 +8,11 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Insert title here</title>
+<link rel="stylesheet" href="UserFetchRailway.css">
 </head>
 <body>
-
+<div class="banner">
+<div class="content">
 <% List<Train> list=(List<Train>)request.getAttribute("list"); %>
 <table border="1">
 <tr>
@@ -36,10 +38,13 @@
 <th><%=train.getTime()[0] %></th>
 <th><%=train.getTime()[train.getTime().length-1] %></th>
 <th><%=Arrays.toString(train.getDays()) %></th>
-<th><button>Book</button></th>
+<th><a href="BookTicket.jsp?tnumber=<%=train.getNumber() %>"><button>Book</button></a></th>
 </tr>
 <% }%>
 
 </table>
+<a href="UserHome.html"><button>Back</button></a>
+</div>
+</div>
 </body>
 </html>

@@ -3,22 +3,48 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Add Railway</title>
+<link rel="stylesheet" href="AddRailway.css">
 </head>
 <body>
-<h1>Enter Train Details</h1><br>
+<div class="banner">
+<div class="add-form">
+<h1>Enter Train Details</h1>
 <form action="addtrain" method="post">
 <table>
-Train Number: <input type="number" name="tnumber"><br>
-Train Name: <input type="text" name="tname"><br>
-Number of Seats: <input type="number" name="tseat"><br>
-Stations: <textarea rows="4" cols="30" name="tstation"></textarea><br>
-Ticket Price: <textarea rows="4" cols="30" name="tprice"></textarea><br>
-Time: <textarea rows="4" cols="30" name="ttime"></textarea><br>
-Days: <textarea rows="4" cols="30" name="tday"></textarea><br>
-<button type="reset">Cancel</button><button>Add</button>
+<p>Train Number:</p>
+<div class="input-box">
+ <input type="number" name="tnumber" placeholder="Train Number">
+ </div>
+<p>Train Name: </p>
+<div class="input-box">
+<input type="text" name="tname" placeholder="Train Name">
+</div>
+<p>Number of Seats: </p>
+<div class="input-box">
+<input type="number" name="tseat" placeholder="Number of Seats">
+</div>
+<p>Stations: </p>
+<div class="input-box">
+<textarea rows="4" cols="30" name="tstation" placeholder="Stations"></textarea>
+</div>
+<p>Ticket Price: </p>
+<div class="input-box">
+<textarea rows="4" cols="30" name="tprice" placeholder="Ticket Price"></textarea>
+</div>
+<p>Time:</p>
+<div class="input-box">
+ <textarea rows="4" cols="30" name="ttime" placeholder="Time"></textarea>
+ </div>
+<p>Days: </p>
+<div class="input-box">
+<textarea rows="4" cols="30" name="tday" placeholder="Days"></textarea>
+</div>
+<button>Add</button><button type="reset">Cancel</button>
 </table>
 </form>
-<br>
+
 <a href="ManagementHome.html"><button>Home</button></a>
+</div>
+</div>
 </body>
 </html>

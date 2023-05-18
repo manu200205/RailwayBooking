@@ -8,6 +8,7 @@ import javax.persistence.EntityTransaction;
 import javax.persistence.Persistence;
 
 import dto.Train;
+import dto.TrainTicket;
 import dto.User;
 
 public class TrainDao {
@@ -39,5 +40,19 @@ public class TrainDao {
 		m.merge(train);
 		t.commit();
 		
+	}
+	public void save(TrainTicket ticket) {
+		t.begin();
+		m.persist(ticket);
+		t.commit();
+	}
+	public TrainTicket fetchTicket(int pnr)
+	{
+		return m.find(TrainTicket.class, pnr);
+	}
+	public void update(TrainTicket ticket) {
+		t.begin();
+		m.merge(ticket);
+		t.commit();
 	}
 }

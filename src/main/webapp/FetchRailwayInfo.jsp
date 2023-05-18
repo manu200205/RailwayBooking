@@ -9,8 +9,11 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Insert title here</title>
+<link rel="stylesheet" href="FetchRailwayInfo.css">
 </head>
 <body>
+<div class="banner">
+<div class="content">
 <% List<Train> list=(List<Train>)request.getAttribute("list"); %>
 <table border="1">
 <tr>
@@ -45,5 +48,9 @@
 <% }%>
 
 </table>
+
+<a href="Home.html"><button>Home</button></a>
+</div>
+</div>
 </body>
 </html>

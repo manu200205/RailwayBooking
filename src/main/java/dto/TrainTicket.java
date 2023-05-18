@@ -1,22 +1,34 @@
 package dto;
 
+import java.sql.Date;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+import javax.persistence.SequenceGenerator;
 
 import lombok.Data;
 
 @Entity
 @Data
 public class TrainTicket {
-@Id
-int pnrNumber;
-String from;
-String to;
-int trainNumber;
-LocalDateTime time;
-boolean status;
-double price;
+	@Id
+	@GeneratedValue(generator = "pnr")
+	@SequenceGenerator(initialValue = 4566541, allocationSize = 1, name = "pnr")
+	int pnr;
+	int trainNumber;
+	String source;
+	String destination;
+	int numberOfSeats;
+	double amount;
+	Date dateOfBooking;
+	Date dateOfJourney;
+	String status;
+
+	@ManyToOne
+	User user;
 }

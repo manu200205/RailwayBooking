@@ -3,17 +3,29 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
+<link rel="stylesheet" href="ManagementLogin.css">
 </head>
 <body>
+<div class="banner">
+<div class="login-form">
 <h1>Management Login</h1>
 <form action="managementLogin" method="post">
 <table>
-Email: <input type="text" name="email"><br><br>
-Password: <input type="password" name="password"><br><br>
-<button type="reset">Cancel</button> <button>Login</button>
+<div class="input-box">
+<p>Email:</p>
+<input type="text" name="email" placeholder="Email">
+</div>
+<div class="input-box">
+<p>Password:</p>
+<input type="password" name="password" placeholder="Password">
+</div>
+<td><button>Login</button></td>
+<td><button type="reset">Cancel</button></td>
 </table>
 </form>
-<br><br>
 <a href="Home.html"><button>Home</button></a>
+</div>
+</div>
+
 </body>
 </html>

@@ -3,30 +3,33 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Login User</title>
-<link rel="stylesheet" href="css/Login.css">
+<link rel="stylesheet" href="Login.css">
 </head>
 <body>
-<h1>Login User</h1>
+<div class="banner">
+
+<div class="login-form">
+<h1>Login</h1>
 <form action="login" method="post">
 <table>
-<tr>
-<th>User Id :</th>
-<td><input type="text" name="userid"></td>
-</tr>
-<tr>
-<th>Password :</th>
-<td><input type="password" name="password"></td>
-</tr>
-
-<tr>
-<th><a href="ForgotPassword.html">Forgot Password?</a></th>
-</tr>
+<div class="input-box">
+<p>User Id :</p>
+<input type="text" name="userid" placeholder="User id">
+</div>
+<div class="input-box">
+<p>Password :</p>
+<input type="password" name="password" placeholder="Password">
+</div>
+<td><button>Submit</button></td>
 <td><button type="reset">Cancel</button></td>
-<td><button>Sumbit</button></td>
+
 </table>
 </form><br>
+<a href="ForgotPassword.html" >Forgot Password?</a><br><br>
 <a href="Register.html">New? click here to Create Account</a><br><br>
 <a href="Home.html"><button>Home</button></a>
+</div>
 
+</div>
 </body>
 </html>
